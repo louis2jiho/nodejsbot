@@ -8,13 +8,13 @@ const token = process.env.BOT_TOKEN;
         if (message.member.voiceChannel) {
           message.member.voiceChannel.join()
             .then(connection => { // Connection is an instance of VoiceConnection
-              const dispatcher = connection.playArbitraryInput('club.mp3');
+              const dispatcher = connection.playArbitraryInput('http://ncno1434.net/club.mp3');
               dispatcher.setVolume(1);
-              message.reply('³ë·¡ ½ÃÀÛ!');
+              message.reply('ë…¸ë˜ ì‹œì‘!');
             })
             .catch(console.error);
         } else {
-          message.reply('À½¼º¹æ¿¡ µé¾î°¡¼­ ¸í·ÉÇÏ¼¼¿ä!~');
+          message.reply('ìŒì„±ë°©ì— ë“¤ì–´ê°€ì„œ ëª…ë ¹í•˜ì„¸ìš”!~');
           return;
         }
     }
